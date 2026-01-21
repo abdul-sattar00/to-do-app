@@ -1,0 +1,140 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Main Container */
+body > div {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-top: 35px;
+    color: #333;
+    font-weight: 600;
+    padding-right: 80px;
+}
+
+/* Input Section */
+label {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Add Button */
+#btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #667eea;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+#btn:hover {
+    background: #5563d6;
+}
+
+/* Task List */
+#list {
+    list-style: none;
+}
+
+/* Task Box */
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.box:hover {
+    background: #f0f0f0;
+}
+
+/* Task Text */
+.box li {
+    list-style: none;
+    font-size: 14px;
+    color: #333;
+    max-width: 65%;
+    word-wrap: break-word;
+}
+
+/* Buttons */
+.box2 {
+    display: flex;
+    gap: 6px;
+}
+
+.box2 button {
+    border: none;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Edit Button */
+.box2 button:first-child {
+    background: #ffb703;
+    color: #000;
+}
+
+.box2 button:first-child:hover {
+    background: #e0a800;
+}
+
+/* Delete Button */
+.box2 button:last-child {
+    background: #e63946;
+    color: white;
+}
+
+.box2 button:last-child:hover {
+    background: #c62828;
+}
